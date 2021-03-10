@@ -42,6 +42,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "BuildWebCompiler": {
+              "target": "Package",
+              "version": "[1.12.394, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -10,7 +10,6 @@ C:\Users\RujieAlfon\Desktop\Blazor\BlazorApp\bin\Debug\net5.0\ref\BlazorApp.dll
 C:\Users\RujieAlfon\Desktop\Blazor\BlazorApp\bin\Debug\net5.0\BlazorApp.pdb
 C:\Users\RujieAlfon\Desktop\Blazor\BlazorApp\bin\Debug\net5.0\BlazorApp.Views.dll
 C:\Users\RujieAlfon\Desktop\Blazor\BlazorApp\bin\Debug\net5.0\BlazorApp.Views.pdb
-C:\Users\RujieAlfon\Desktop\Blazor\BlazorApp\obj\Debug\net5.0\BlazorApp.csprojAssemblyReference.cache
 C:\Users\RujieAlfon\Desktop\Blazor\BlazorApp\obj\Debug\net5.0\BlazorApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\RujieAlfon\Desktop\Blazor\BlazorApp\obj\Debug\net5.0\BlazorApp.AssemblyInfoInputs.cache
 C:\Users\RujieAlfon\Desktop\Blazor\BlazorApp\obj\Debug\net5.0\BlazorApp.AssemblyInfo.cs
@@ -56,3 +55,4 @@ C:\Users\RujieAlfon\Desktop\Blazor\BlazorApp\obj\Debug\net5.0\ref\BlazorApp.dll
 C:\Users\RujieAlfon\Desktop\Blazor\BlazorApp\obj\Debug\net5.0\BlazorApp.pdb
 C:\Users\RujieAlfon\Desktop\Blazor\BlazorApp\obj\Debug\net5.0\BlazorApp.genruntimeconfig.cache
 C:\Users\RujieAlfon\Desktop\Blazor\BlazorApp\obj\Debug\net5.0\BlazorApp.csproj.CopyComplete
+C:\Users\RujieAlfon\Desktop\Blazor\BlazorApp\obj\Debug\net5.0\BlazorApp.csprojAssemblyReference.cache

@@ -1,0 +1,6 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/app.min.css",
+    "inputFile": "Styles/App.scss"
+  }
+]
