@@ -1,11 +1,12 @@
 @import '_Variables.scss';
 @import '_Mixins.scss';
+@import 'Header.scss';
 
-h1 {
-    color: $primary-yellow;
-}
-
-img {
-    background: $primary-yellow;
-    color: red;
+body {
+    background-color: $seconday-white;
+    color: $primary-gray;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
 }
