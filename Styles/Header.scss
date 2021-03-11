@@ -1,5 +1,17 @@
 ﻿header {
     background: $primary-blue;
-    height: 68px;
+    min-height: 68px;
 
+    .main-header {
+        margin: 0 auto;
+        padding: 0 20px;
+        width: 1440px;
+
+        .logo {
+            img {
+                height: 36px;
+                width: 194px;
+            }
+        }
+    }
 }
