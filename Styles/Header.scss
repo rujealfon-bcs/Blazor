@@ -1,16 +1,85 @@
 ﻿header {
     background: $primary-blue;
-    min-height: 68px;
 
     .main-header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 16px 20px;
         width: 1440px;
 
-        .logo {
-            img {
-                height: 36px;
-                width: 194px;
+        .left-header {
+            .logo {
+                img {
+                    height: 36px;
+                    width: 194px;
+                }
+            }
+        }
+
+        .right-header {
+            align-items: center;
+            display: flex;
+
+            .profile-header {
+                align-items: center;
+                display: flex;
+                margin-right: 22px;
+
+                .profile-image {
+                    margin-right: 10px;
+                    height: 34px;
+                    width: 34px;
+
+                    img {
+                        border-radius: 100%;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                .profile-name-email {
+                    .name {
+                        color: $primary-white;
+                        font-family: $font-bold;
+                        line-height: 17px;
+                    }
+
+                    .email {
+                        line-height: 17px;
+
+                        a {
+                            color: $primary-light-blue;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+
+            .sign-out-header {
+                a {
+                    color: $primary-white;
+                    font-family: $font-bold;
+                    font-size: 15px;
+                    margin-left: 25px;
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 2px;
+                        left: -22px;
+                        width: 15px;
+                        height: 15px;
+                        background-image: url('../wwwroot/images/sprites/business-admin-sprites.png');
+                        background-position: 44px 46px;
+                    }
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
             }
         }
     }
