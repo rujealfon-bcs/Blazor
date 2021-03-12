@@ -1,0 +1,80 @@
+﻿.page-index {
+    .mat-tab-group {
+        .mdc-tab-bar {
+            width: 200px;
+        }
+
+        .mdc-tab-indicator .mdc-tab-indicator__content--underline {
+            border-color: $primary-light-blue;
+        }
+
+        .mdc-tab__ripple::before, .mdc-tab__ripple::after {
+            background-color: $primary-light-blue;
+        }
+
+        .mat-tab-group-content {
+            padding: 30px 20px;
+
+            h1 {
+                font-family: $font-bold;
+                color: $primary-blue;
+                font-size: 28px;
+            }
+
+            .description {
+            }
+
+            .show-items-entries {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .table {
+                margin-top: 10px;
+
+                thead {
+                    th {
+                        background-color: $secondary-blue;
+                        border-left: 1px solid $primary-white;
+                        color: $primary-white;
+                        text-align: center;
+                    }
+                }
+
+                tbody {
+                    td {
+                        border: 2px solid $secondary-white;
+                        color: $primary-gray;
+                        font-size: 13px;
+
+                        &:last-child {
+                            text-align: center;
+
+                            a {
+                                font-size: 12px;
+                                font-family: $font-bold;
+                                position: relative;
+                                padding-left: 20px;
+
+                                &:hover {
+                                    text-decoration: none;
+                                }
+
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0px;
+                                    left: -2px;
+                                    width: 15px;
+                                    height: 15px;
+                                    background-image: url('../wwwroot/images/sprites/business-admin-sprites.png');
+                                    background-position: 89px 46px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

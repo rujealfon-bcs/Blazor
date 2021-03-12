@@ -1,4 +1,6 @@
-﻿@mixin transform($degrees) {
+﻿/* Mixins
+------------------------------------------------------------------------------- */
+@mixin transform($degrees) {
     transform: translateZ($degrees);
     -webkit-transform: translateZ($degrees);
     -ms-transform: translateZ($degrees);

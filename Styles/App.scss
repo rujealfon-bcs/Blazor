@@ -1,21 +1,14 @@
+/* Globals
+------------------------------------------------------------------------------- */
 @import '_Variables.scss';
 @import '_Mixins.scss';
-@import 'Header.scss';
+@import 'Global.scss';
 
-body {
-    background-color: $seconday-white;
-    color: $primary-gray;
-    font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: normal;
-}
+/* Components
+------------------------------------------------------------------------------- */
+@import 'Components/Header.scss';
 
-.main-container {
-    border-radius: 0 0 8px 8px;
-    background-color: #FFFFFF;
-    box-shadow: 1px 2px 6px 0 rgba(0,0,0,0.06), 1px 2px 8px 1px rgba(0,0,0,0.04);
-    margin: 20px auto;
-    padding: 16px 20px;
-    width: 1440px;
-}
+/* Pages
+------------------------------------------------------------------------------- */
+@import 'Pages/Index.scss';
+

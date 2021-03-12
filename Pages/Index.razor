@@ -1,9 +1,64 @@
 @page "/"
 
-<div class="mat-layout-grid">
-    <div class="mat-layout-grid-inner">
-        <div class="mat-layout-grid-cell">1</div>
-        <div class="mat-layout-grid-cell">2</div>
-        <div class="mat-layout-grid-cell">3</div>
-    </div>
-</div>
+<section class="page-index">
+    <MatTabGroup>
+        <MatTab Label="Vendor - Cost Code">
+            <h1>Vendor - Cost Code</h1>
+            <p class="description">
+                Below grid shows valid Business Craft Vendor Category and relevant cost codes mapped to them
+                based on Business Unit. Administrator can adjust the Cost as necessary, which will reflect in
+                <a href="#">Click Home</a> the next day after the Vendor Integration run that night.
+            </p>
+
+            <div class="show-items-entries">
+                <div class="show-items">
+                    Showing 1-10 of 1,000 items
+                </div>
+                <div class="show-entries">
+                    Show entries
+                </div>
+            </div>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Vendor Category</th>
+                        <th>sg Cost Code</th>
+                        <th>Business Unit</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>text area here</td>
+                        <td>text area here</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>
+                            <a href="#">Edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jacob</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>
+                            <a href="#">Edit</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Larry</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td><a href="#">Edit</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </MatTab>
+    </MatTabGroup>
+</section>

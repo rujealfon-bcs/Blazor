@@ -1,0 +1,39 @@
+﻿body {
+    background-color: $secondary-white;
+    color: $primary-gray;
+    font-family: $font-regular, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.main-container {
+    border-radius: 0 0 8px 8px;
+    background-color: $primary-white;
+    box-shadow: 1px 2px 6px 0 rgba(0,0,0,0.06), 1px 2px 8px 1px rgba(0,0,0,0.04);
+    margin: 20px auto;
+    width: 1440px;
+}
+
+a {
+    color: $primary-light-blue;
+
+    &:hover {
+        color: $primary-light-blue;
+        opacity: .8;
+    }
+}
+
+/* Tabs
+------------------------------------------------------------------------------- */
+.mat-tab-group {
+    .mdc-tab__text-label {
+        font-family: $font-bold;
+        text-transform: none;
+    }
+
+    .mdc-tab--active .mdc-tab__text-label {
+        color: $primary-light-blue;
+        font-size: 12px;
+    }
+}
