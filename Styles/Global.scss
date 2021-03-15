@@ -69,3 +69,67 @@ a {
         z-index: 1;
     }
 }
+
+/* Text Field
+------------------------------------------------------------------------------- */
+.mdc-text-field--filled {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    background-color: $secondary-white;
+    margin-bottom: 0;
+    position: relative;
+    height: 38px;
+    width: 100%;
+    padding-right: 32px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        right: 10px;
+        width: 15px;
+        height: 20px;
+        background-image: url("../images/sprites/business-admin-sprites.png");
+        background-position: 133px 50px;
+        z-index: 1;
+    }
+}
+
+
+
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color: rgba(51,61,77,0.5);
+    font-size: 13px;
+    font-family: $font-regular;
+}
+
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input {
+    color: rgba(51,61,77,0.5);
+    font-size: 13px;
+    font-family: $font-regular;
+}
+
+.mdc-text-field--filled .mdc-line-ripple::after {
+    border-bottom-color: $primary-light-blue;
+}
+
+.mdc-text-field__input {
+    height: 25px;
+}
+
+.mdc-text-field--filled .mdc-floating-label--float-above {
+    transform: translateY(-75%) scale(0.75);
+}
+
+.mdc-text-field--filled::before {
+    height: 30px;
+}
+
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label  {
+    color: $primary-light-blue;
+}
+
+.mdc-text-field .mdc-text-field__input {
+    caret-color: $primary-black;
+}

@@ -39,8 +39,10 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>text area here</td>
-                        <td>text area here</td>
+                        <td>
+                            <MatTextField @bind-Value="@myStringValue" Label="Type Something ..."></MatTextField>
+                        </td>
+                        <td><MatTextField @bind-Value="@myStringValue2" Label="Type Something ..."></MatTextField></td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -73,3 +75,9 @@
         </MatTab>
     </MatTabGroup>
 </section>
+
+@code
+{
+    string myStringValue;
+    string myStringValue2;
+}
