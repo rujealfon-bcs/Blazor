@@ -25,8 +25,16 @@
             }
 
             .show-items-entries {
+                align-items: center;
                 display: flex;
                 justify-content: space-between;
+
+                .show-entries {
+                    .select-wrapper {
+                        display: inline-block;
+                        padding: 0 5px;
+                    }
+                }
             }
 
             .table {

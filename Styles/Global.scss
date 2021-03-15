@@ -37,3 +37,35 @@ a {
         font-size: 12px;
     }
 }
+
+/* Custom Select
+------------------------------------------------------------------------------- */
+
+.select-wrapper {
+    position: relative;
+
+    .custom-select {
+        background: $secondary-white;
+        font-size: 13px;
+        padding: 0px 22px 0px 10px;
+        position: relative;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        width: 15px;
+        height: 15px;
+        background-image: url('../wwwroot/images/sprites/business-admin-sprites.png');
+        background-position: 175px 50px;
+        z-index: 1;
+    }
+
+    &:focus {
+        border: 0;
+        outline: 0;
+        box-shadow: none;
+    }
+}
