@@ -10,6 +10,10 @@
                 <a href="#">Click Home</a> the next day after the Vendor Integration run that night.
             </p>
 
+            <div class="dialog-button">
+                <MatButton Icon="add" OnClick="@OpenDialog" Raised="true">Add New Record</MatButton>
+            </div>
+
             <div class="show-items-entries">
                 <div class="show-items">
                     Showing 1-10 of 1,000 items
@@ -40,9 +44,9 @@
                 <tbody>
                     <tr>
                         <td>
-                            <MatTextField @bind-Value="@myStringValue" Label="Type Something ..."></MatTextField>
+                            <MatTextField Class="mdc-text-field-funnel-icon" @bind-Value="@myStringValue" Label="Type Something ..."></MatTextField>
                         </td>
-                        <td><MatTextField @bind-Value="@myStringValue2" Label="Type Something ..."></MatTextField></td>
+                        <td><MatTextField Class="mdc-text-field-funnel-icon" @bind-Value="@myStringValue2" Label="Type Something ..."></MatTextField></td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -74,10 +78,39 @@
             <BlazorApp.Shared.Components.Pagination></BlazorApp.Shared.Components.Pagination>
         </MatTab>
     </MatTabGroup>
+
+    <MatDialog @bind-IsOpen="@dialogIsOpen" CanBeClosed="false">
+        <MatDialogTitle>Add New Record</MatDialogTitle>
+        <MatDialogContent>
+            <div class="form-field">
+                <MatTextField @bind-Value="@vendorCategory" Label="Vendor Category"></MatTextField>
+            </div>
+            <div class="form-field">
+                <MatTextField @bind-Value="@costCode" Label="sg Cost Code"></MatTextField>
+            </div>
+            <div class="form-field">
+                <MatTextField @bind-Value="@businessUnit" Label="Business Unit"></MatTextField>
+            </div>
+        </MatDialogContent>
+        <MatDialogActions>
+            <MatButton Class="btn-cancel" OnClick="@(e => { dialogIsOpen = false; })">Cancel</MatButton>
+            <MatButton Class="btn-save">Save</MatButton>
+        </MatDialogActions>
+    </MatDialog>
 </section>
 
 @code
 {
     string myStringValue;
     string myStringValue2;
+
+    bool dialogIsOpen = false;
+    string vendorCategory = null;
+    string costCode = null;
+    string businessUnit = null;
+
+    void OpenDialog()
+    {
+        dialogIsOpen = true;
+    }
 }

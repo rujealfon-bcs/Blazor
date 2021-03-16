@@ -83,20 +83,20 @@ a {
     width: 100%;
     padding-right: 32px;
 
-    &:after {
-        content: '';
-        position: absolute;
-        top: 6px;
-        right: 10px;
-        width: 15px;
-        height: 20px;
-        background-image: url("../images/sprites/business-admin-sprites.png");
-        background-position: 133px 50px;
-        z-index: 1;
+    &.mdc-text-field-funnel-icon { 
+        &:after {
+            content: '';
+            position: absolute;
+            top: 6px;
+            right: 10px;
+            width: 15px;
+            height: 20px;
+            background-image: url("../images/sprites/business-admin-sprites.png");
+            background-position: 133px 50px;
+            z-index: 1;
+        }
     }
 }
-
-
 
 .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
     color: rgba(51,61,77,0.5);
@@ -132,4 +132,19 @@ a {
 
 .mdc-text-field .mdc-text-field__input {
     caret-color: $primary-black;
+}
+
+/* Button
+------------------------------------------------------------------------------- */
+.mdc-button--raised:not(:disabled), .mdc-button--unelevated:not(:disabled) {
+    background: $primary-button-blue;
+    font-size: 16px;
+    padding: 25px 50px;
+    text-transform: none;
+}
+
+/* Form
+------------------------------------------------------------------------------- */
+.form-field {
+    margin-bottom: 16px;
 }
